@@ -43,8 +43,8 @@ namespace Visits
             };
 
             var result = Visit.Find(visits);
-            var expectedPeak = 4;
-            var expectedPeakAchieved = new DateTime(2017, 9, 15, 1, 15, 0);            
+            var expectedPeak = 3;
+            var expectedPeakAchieved = new DateTime(2017, 9, 15, 1, 10, 0);            
 
             Assert.AreEqual(expectedPeak, result.Item1);
             Assert.AreEqual(expectedPeakAchieved, result.Item2);

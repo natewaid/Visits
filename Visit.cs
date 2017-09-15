@@ -31,14 +31,14 @@ namespace Visits
                     peakAchieved = starts.ElementAt(i);
                 }
 
-                if (i == 0)
+                if (i == starts.Count() - 1)
                 {
                     continue;
                 }
 
                 occupants -= visits.Where(v =>
-                    v.End > starts.ElementAt(i - 1)
-                    && v.End < starts.ElementAt(i))
+                    v.End > starts.ElementAt(i)
+                    && v.End < starts.ElementAt(i + 1))
                     .Count();
             }
 
