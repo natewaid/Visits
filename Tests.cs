@@ -9,7 +9,7 @@ namespace Visits
     public class Tests
     {
         [TestMethod]
-        public void calculates_peak_for_visits_with_no_exits_in_between()
+        public void finds_peak_for_visits_with_no_exits_in_between()
         {
             var visits = new[]
             {
