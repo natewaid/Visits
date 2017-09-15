@@ -33,7 +33,7 @@ namespace Visits
 
                 if (i == starts.Count() - 1)
                 {
-                    continue;
+                    break;
                 }
 
                 occupants -= visits.Where(v =>
